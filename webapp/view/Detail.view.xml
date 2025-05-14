@@ -1,8 +1,50 @@
 <mvc:View
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="ui5.walkthrough.controller.Detail"
 >
-	<Page title="{i18n>detailPageTitle}">
-		<ObjectHeader title="Invoice" />
+	<Page title="{i18n>homePageTitle}" enableScrolling="false">
+		<VBox
+			width="100%"
+			height="100%"
+			justifyContent="Center"
+			alignItems="Center"
+			class="sapUiContentPadding"
+		>
+
+			<HBox alignItems="Center">
+				<Label text="RNC" labelFor="rnc" width="150px" />
+				<Input id="rnc" width="200px" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Label text="Centro fabril" labelFor="centroFabril" width="150px" />
+				<Input id="centroFabril" width="200px" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Label text="Área responsável" labelFor="areaResponsavel" width="150px" />
+				<Input id="areaResponsavel" width="200px" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Label text="Linha de produção" labelFor="linhaProducao" width="150px" />
+				<Input id="linhaProducao" width="200px" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Label text="Defeito" labelFor="defeito" width="150px" />
+				<Input id="defeito" width="200px" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Button
+					text="Salvar"
+					press="onPress"
+					type="Emphasized"
+					class="sapUiSmallMargin"
+				/>
+			</HBox>
+		</VBox>
 	</Page>
 </mvc:View>
