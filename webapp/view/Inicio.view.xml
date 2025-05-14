@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.Inicio"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+>
+	<VBox
+		width="100%"
+		justifyContent="Center"
+		alignItems="Center"
+		class="sapUiContentPadding"
+	>
+		<HBox alignItems="Center">
+			<Label text="Tipo de FO" labelFor="tiposFo" width="100px" />
+			<Select id="tiposFo" width="200px" selectedKey="1">
+				<items>
+					<core:Item key="1" text="Comercial" />
+					<core:Item key="2" text="Logística" />
+					<core:Item key="3" text="Técnica" />
+				</items>
+			</Select>
+		</HBox>
+
+		<HBox alignItems="Center" class="sapUiSmallMarginTop">
+			<Label text="Atendente" labelFor="inputDescricao" width="100px" />
+			<Input id="inputDescricao" width="200px" />
+		</HBox>
+
+		<HBox alignItems="Center">
+			<Button
+				text="Criar FO"
+				press="onPress"
+				type="Emphasized"
+				class="sapUiSmallMargin"
+			/>
+		</HBox>
+	</VBox>
+</mvc:View>
