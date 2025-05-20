@@ -38,6 +38,11 @@
 			</HBox>
 
 			<HBox alignItems="Center" class="sapUiSmallMarginTop">
+				<Label text="Texto" labelFor="texto" width="150px" />
+				<TextArea id="texto" width="200px" rows="5" placeholder="" />
+			</HBox>
+
+			<HBox alignItems="Center" class="sapUiSmallMarginTop">
 				<Button
 					text="Salvar"
 					press="onPress"
